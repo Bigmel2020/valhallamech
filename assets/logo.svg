@@ -1,0 +1,11 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160' width='28' height='28' role='img' aria-label='Valhalla Mechanical logo'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+    <stop offset='0%' stop-color='#d4af37'/><stop offset='100%' stop-color='#b9982f'/></linearGradient></defs>
+  <rect width='160' height='160' rx='20' fill='#000'/>
+  <g transform='translate(20,20)'>
+    <path d='M60 0 L84 20 L104 8 L124 40 L110 80 L60 84 L44 72 L36 40 Z' fill='url(#g)'/>
+    <circle cx='60' cy='104' r='9' fill='#d4af37'/>
+    <rect x='72' y='96' width='32' height='16' rx='4' fill='#d4af37'/>
+  </g>
+</svg>
