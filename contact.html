@@ -1,0 +1,63 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Valhalla Mechanical</title>
+<meta name="description" content="Contact Valhalla Mechanical to request HVAC service or a replacement quote.">
+<link rel="icon" href="assets/logo.svg"><link rel="stylesheet" href="assets/styles.css">
+</head><body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="" width="28" height="28"/><span>Valhalla Mechanical</span>
+    </a>
+    <div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">Menu</button>
+      <nav id="menu" class="menu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="services.html">Services</a>
+        <a class="" href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid" style="grid-template-columns:1fr .9fr">
+    <div>
+      <h1>Contact</h1>
+      <p class="lead">Tell us about the issue, equipment, and timeline. We’ll respond within one business day.</p>
+      <div id="form-alert" class="alert" style="display:none"></div>
+      <form id="contact-form" class="form" method="post" action="" aria-describedby="help">
+        <div><label for="name">Name</label><input id="name" name="name" required placeholder="Your name"></div>
+        <div><label for="email">Email</label><input id="email" type="email" name="email" required placeholder="you@company.com"></div>
+        <div><label for="phone">Phone</label><input id="phone" name="phone" placeholder="(404) 555-1234"></div>
+        <div><label for="message">How can we help?</label><textarea id="message" name="message" rows="6" placeholder="Describe the problem or project."></textarea></div>
+        <div>
+          <button class="button" type="submit">Send Message</button>
+          <p id="help" style="color:#666;margin-top:8px">To receive submissions, set the form <code>action</code> to your service (e.g., Formspree).</p>
+        </div>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Direct</h3>
+      <p><strong>Phone:</strong> <a href="tel:+14045551234">(404) 555-1234</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@valmechhvac.com">info@valmechhvac.com</a></p>
+      <p><strong>Address:</strong> 730 Peachtree St NE #570, Atlanta, GA 30308</p>
+      <iframe style="width:100%;aspect-ratio:16/9;border:0;border-radius:12px" loading="lazy" title="Map to office"
+        src="https://www.google.com/maps?q=730+Peachtree+St+NE+#570,+Atlanta,+GA+30308=&output=embed"></iframe>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>Valhalla Mechanical • HVAC & Refrigeration • Honest Work. Legendary Service.</div>
+    <div>730 Peachtree St NE #570, Atlanta, GA 30308 • <a href="tel:+14045551234">(404) 555-1234</a> • <a href="mailto:info@valmechhvac.com">info@valmechhvac.com</a></div>
+    <div>© 2025 Valhalla Mechanical. All rights reserved.</div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+
+</body></html>
