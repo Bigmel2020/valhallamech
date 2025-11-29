@@ -8,37 +8,66 @@
   <link rel="stylesheet" href="assets/styles.css">
 
   <!-- Add this style block directly after the stylesheet link -->
-  <style>
+   <style>
+    /* layout for the KPI row */
     .kpis {
       display: flex;
-      gap: 12px;
+      gap: 16px;            /* space between boxes */
+      align-items: stretch; /* ensure equal height */
+      margin-top: 18px;     /* optional: move here instead of inline */
     }
 
+    /* make each KPI take equal width */
     .kpi {
-      border: 2px solid #D4AF37; /* gold — use #FFD700 for brighter gold */
+      flex: 1 1 0;          /* grow/shrink equally, basis 0 for equal distribution */
+      min-width: 0;         /* allow flex items to shrink properly */
+      border: 2px solid #D4AF37; /* gold border */
       border-radius: 8px;
-      padding: 12px 14px;
-      background: #ffffff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-      min-width: 120px;
-      text-align: left;
+      padding: 14px;
+      background: #000000;  /* black inside the border */
+      color: #ffffff;       /* default text color inside boxes */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: left;
     }
 
+    /* number / headline inside KPI — make it stand out in gold */
     .kpi .n {
       font-weight: 700;
       font-size: 1.1rem;
       margin-bottom: 6px;
+      color: #D4AF37; /* gold for the numeric / primary text */
     }
 
+    /* secondary text inside KPI */
+    .kpi > div:last-child {
+      color: #dcdcdc; /* softer white for the description */
+      font-size: 0.95rem;
+    }
+
+    /* subtle hover for KPI */
     .kpi:hover {
       border-color: #FFD700;
-      transform: translateY(-2px);
-      transition: transform 140ms ease, border-color 140ms ease;
+      transform: translateY(-3px);
+      transition: transform 160ms ease, border-color 160ms ease;
+    }
+
+    /* Make the ghost button text gold (Explore Services) */
+    .button.ghost {
+      color: #D4AF37 !important;
+      border: 2px solid #D4AF37;
+      background: transparent;
+    }
+
+    /* Optional hover state for the ghost button */
+    .button.ghost:hover {
+      background: rgba(212,175,55,0.08);
+      color: #FFD700 !important;
     }
   </style>
+    
 </head><body>
 
 <header class="nav">
