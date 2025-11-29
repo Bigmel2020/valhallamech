@@ -17,7 +17,7 @@
       margin-top: 18px;     /* optional: move here instead of inline */
     }
 
-    /* make each KPI take equal width */
+    /* make each KPI take equal width and center its content */
     .kpi {
       flex: 1 1 0;          /* grow/shrink equally, basis 0 for equal distribution */
       min-width: 0;         /* allow flex items to shrink properly */
@@ -27,10 +27,13 @@
       background: #000000;  /* black inside the border */
       color: #ffffff;       /* default text color inside boxes */
       box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+
+      /* center the content horizontally and vertically */
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: left;
+      justify-content: center; /* vertical centering */
+      align-items: center;     /* horizontal centering */
+      text-align: center;      /* ensures multi-line text is centered */
     }
 
     /* number / headline inside KPI — make it stand out in gold */
