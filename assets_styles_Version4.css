@@ -1,0 +1,65 @@
+/* Minimal services card styles — inherits site typography & spacing */
+.services-grid {
+  display: flex;
+  gap: 14px;
+  align-items: stretch; /* equal height on a row */
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+/* Keep visuals subtle so it matches the original page */
+.service-card {
+  flex: 1 1 300px;    /* equal distribution, wraps under 300px */
+  min-width: 260px;
+  box-sizing: border-box;
+  border: 2px solid var(--gold, #D4AF37); /* uses site variable if present */
+  border-radius: 6px;
+  padding: 12px;
+  background: transparent; /* don't override page background */
+  color: inherit;          /* use site text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 160ms ease, border-color 160ms ease;
+  box-shadow: none;        /* remove heavy shadow to match site */
+  text-align: left;
+  min-height: auto;        /* don't force tall cards unless needed */
+}
+
+/* Headings and text inside cards should match site */
+.service-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  color: inherit;
+}
+
+.service-card p,
+.service-card ul {
+  margin: 0 0 10px 0;
+  color: inherit;
+  font-size: 0.95rem;
+}
+
+/* Subtle hover (non-intrusive) */
+.service-card:hover,
+.service-card:focus-within {
+  transform: translateY(-2px);
+  border-color: var(--gold-bright, #FFD700);
+}
+
+/* Make ghost buttons use your gold color (matches site) */
+.button.ghost {
+  color: var(--gold, #D4AF37) !important;
+  border: 2px solid var(--gold, #D4AF37);
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Small screens: stack cards */
+@media (max-width: 820px) {
+  .service-card { flex-basis: 100%; min-width: 100%; }
+  .services-grid { gap: 12px; }
+}
